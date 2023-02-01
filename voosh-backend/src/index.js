@@ -1,13 +1,13 @@
 const express = require("express")
-const connect = require("./config/Connect")
+const connect = require("../config/Connect")
 const dotenv = require("dotenv")
 dotenv.config("./.env")
 const cors = require("cors")
 const mongoose = require("mongoose")
-const addUser = require("./Controller/userRouter/add-user")
-const loginUser = require("./Controller/userRouter/login-user")
-const postorder = require("./Controller/orderRouter/postOrder")
-const getorder = require("./Controller/orderRouter/getOrder")
+const addUser = require("../Controller/userRouter/add-user")
+const loginUser = require("../Controller/userRouter/login-user")
+const postorder = require("../Controller/orderRouter/postOrder")
+const getorder = require("../Controller/orderRouter/getOrder")
 
 
 const PORT = process.env.PORT || 8080
