@@ -24,7 +24,6 @@ const LoginUser = () => {
         } else {
             try {
                 axios.post("http://localhost:8080/login-user", data).then((res) => {
-                    console.log(res.data)
                     localStorage.setItem("voosh-user-Token",JSON.stringify(res.data.token))
                     alert("Login Successfull")
                     navigate("/add-order")
