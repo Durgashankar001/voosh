@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(11, 22, 34);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(16, 58, 102);
+  color: white;
+  padding: 15px 2rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+.nav h1 {
+  cursor: pointer;
+}
+
+.my_form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(11, 22, 34);
+}
+
+.my_form form {
+  width: 400px;
+  padding: 1rem;
+}
+
+.my_form form h1 {
+  color: wheat;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+.my_form form input,
+.my_form form select {
+  width: 100%;
+  outline: none;
+  color: black;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  padding-left: 5px;
+  height: 30px;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+.my_form form label {
+  margin-bottom: 8px;
+  color: white;
+}
+
+.my_form form p {
+  color: white;
+  text-align: right;
+}
+
+.my_form form span {
+  color: red;
+  cursor: pointer;
+}
+
+.my_form form .btn {
+  width: 50%;
+  display: block;
+  cursor: pointer;
+  margin: auto;
+  background: rgb(248, 4, 4);
+  border-color: aliceblue;
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.main-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 1.2rem;
+  margin-top: 5rem;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.data-body {
+  background-color: rgb(116, 250, 116);
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 720px) {
+  .nav h1{
+    font-size: 1.3rem;
+  }
+  .main-data{
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+}
