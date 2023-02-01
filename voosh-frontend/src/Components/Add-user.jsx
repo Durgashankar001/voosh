@@ -23,7 +23,7 @@ const AddUser = () => {
             alert("Please fill all the fields")
         } else {
             try {
-                axios.post("http://localhost:8080/add-user", data).then((res) => {
+                axios.post("https://voosh-backend-production.up.railway.app/add-user", data).then((res) => {
                     alert("Signup successfull")
                     navigate("/login-user")
                 })

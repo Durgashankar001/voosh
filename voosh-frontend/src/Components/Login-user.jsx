@@ -23,7 +23,7 @@ const LoginUser = () => {
             alert("Please fill all the fields")
         } else {
             try {
-                axios.post("http://localhost:8080/login-user", data).then((res) => {
+                axios.post("https://voosh-backend-production.up.railway.app/login-user", data).then((res) => {
                     localStorage.setItem("voosh-user-Token",JSON.stringify(res.data.token))
                     alert("Login Successfull")
                     navigate("/add-order")

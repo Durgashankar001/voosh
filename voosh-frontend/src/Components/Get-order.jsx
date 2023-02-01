@@ -11,7 +11,7 @@ const GetOrder = () => {
         } else {
             const decoded = jwt_decode(token)
             if (decoded.id) {
-                axios.get(`http://localhost:8080/get-order?user_id=${decoded.id}`, {
+                axios.get(`https://voosh-backend-production.up.railway.app/get-order?user_id=${decoded.id}`, {
                     headers: {
                         "x-authorization": `Bearer ${token}`
                     }

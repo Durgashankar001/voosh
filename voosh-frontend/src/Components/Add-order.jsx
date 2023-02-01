@@ -29,7 +29,7 @@ const AddOrder = () => {
             const decoded = jwt_decode(token)
             if (decoded.id) {
                 try {
-                    axios.post("http://localhost:8080/add-order", {
+                    axios.post("https://voosh-backend-production.up.railway.app/add-order", {
                         user_id: decoded.id,
                         phone_number: data.phone_number,
                         sub_total: data.sub_total
